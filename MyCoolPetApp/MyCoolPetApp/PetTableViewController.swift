@@ -5,6 +5,102 @@
 //  Created by Curtis Mak on 2017-11-15.
 //  Copyright © 2017 Curtis Mak. All rights reserved.
 //
+/*
+ 
+ Overall Project
+ 
+ Create an app that displays pets in a table view. The table view will show its name and picture.
+ 
+ 
+ Steps
+ 
+ 1. Create new project
+ 
+ 2. Create our data model
+ 
+ 3. Setup our UITableViewController
+ 
+ 4. Add assets and setup our testing data
+ 
+ 5. Test that our table view works with the default basic cells
+ 
+ 6. Create our custom table view cell
+ 
+ 7. Setup our table view to use the new custom cell
+ 
+ 8. Show off reloading in new data
+ 
+ 
+ ** Topics to Cover **
+ 
+ What is a custom cell? Show slides
+ 
+ - Creating a tableview
+ - Create a custom view
+ - Displaying data in the custom view
+ - Reload data when new data is added
+ 
+ 
+ ** Create New Project **
+ 
+ - Setup delete existing VC and create new UITableViewController in storyboard
+ - Create new class for new VC with navigation embedded
+ 
+ 
+ ** Create Data Model **
+ 
+ Animal
+ - name
+ - picture
+ 
+ 
+ ** UITableView Review **
+ 
+ What are the minimum requirements?
+ 
+ - Delegate (already exists in tableVC)
+ - DataSource (already exists in tableVC)
+ - How many rows in a section?
+ - How does the cell look like or what kind of cell is it?
+ 
+ These methods are provided for us, we just have to provide the correct information
+ 
+ Quick test that it works with regular cells
+ 
+ 
+ ** UITableViewCell Custom Setup**
+ 
+ Apple provides a default UITableViewCell to have a text and image. But we want more!
+ 
+ Create a custom cell!
+ - Create our cell layout in storyboard
+ - Add a reuse identifier
+ - Create a new subclass of UITableViewCell
+ - Connect outlets to new subclass from storyboard
+ 
+ 
+ ** Add custom cell to tableView **
+ 
+ - Update data array
+ - Update cellForRowAt
+ - Update to have cell update with attributes
+ - Update row count
+ 
+ 
+ ** Reload TableView with new data **
+ 
+ We have an array to store the data and it is reflected on the UITableView
+ 
+ Because data is stored separately, we need to update the data and tableview separately
+ - Add new data
+ - Update tableview
+ - reload vs insert
+ 
+ 
+ 
+ 
+ */
+
 
 import UIKit
 
